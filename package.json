@@ -1,0 +1,35 @@
+{
+    "name": "tdd",
+    "version": "1.0.0",
+    "description": "TDD module pattern",
+    "main": "index.js",
+    "scripts": {
+        "test": "karma start karma.conf.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "aencinar"
+    },
+    "keywords": [
+        "es5",
+        "karma",
+        "jasmine",
+        "tdd",
+        "unit",
+        "testing"
+    ],
+    "author": "Ana Encinar",
+    "license": "ISC",
+    "dependencies": {
+        "grunt": "^1.0.1",
+        "grunt-cli": "^1.2.0",
+        "grunt-karma": "^2.0.0",
+        "jasmine": "^2.5.3",
+        "jasmine-core": "^2.5.2",
+        "karma": "^1.5.0",
+        "karma-chrome-launcher": "^2.0.0",
+        "karma-jasmine": "^1.1.0",
+        "karma-phantomjs-launcher": "^1.0.2",
+        "phantomjs": "^2.1.7"
+    }
+}
