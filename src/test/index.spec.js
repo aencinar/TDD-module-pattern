@@ -62,22 +62,15 @@ describe("function statistics", function() {
 
     it("max value in ni", function() {
         funct.ni = ni;
-        var max = 0;
-        for (var i in ni) {
-            if (ni[i] > max) {
-                max = ni[i];
-            }
-        }
+
+        var max = 29; // lo sabemos por los datos de prueba
+
         expect(funct.maxValue()).toEqual(max);
     });
 
     it("min value in ni", function() {
-        var min = ni[0];
-        for (var i in ni) {
-            if (ni[i] < min) {
-                min = ni[i];
-            }
-        }
+        var min = 5;
+
         expect(funct.minValue()).toEqual(min);
     });
 
@@ -85,17 +78,10 @@ describe("function statistics", function() {
         var n = ni.length;
         var fi = [];
         var pi = [];
-        for (var i in ni) {
-            fi.push(ni[i] / n);
-            pi.push((ni[i].Lmin + ni[i].Lmax) / 2);
-        }
 
-        var xA = 0;
-        for (var i = 0; i < fi.length; i++) {
-            xA += fi[i] * pi[i];
-        }
+        var xA = 49.23469387755102;
 
-        xA = xA / fi.length;
+        console.log(funct.arithmeticAverage());
 
         expect(funct.arithmeticAverage()).toEqual(xA);
 

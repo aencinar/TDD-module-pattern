@@ -7,11 +7,22 @@ module.exports = function(grunt) {
             unit: {
                 configFile: 'karma.conf.js'
             }
+        },
+        jasmine: {
+            pivotal: {
+                src: 'src/**/*.js',
+                options: {
+                    specs: 'spec/*spec.js',
+                    helpers: 'spec/*Helper.js'
+                }
+            }
         }
 
     });
 
     // Register tasks.
     grunt.loadNpmTasks('grunt-karma');
-    grunt.registerTask('default', ['karma']);
+    grunt.loadNpmTasks('grunt-contrib-jasmine');
+    grunt.registerTask('karma-test', ['karma']);
+    grunt.registerTask('grunt-jasmine', ['jasmine']);
 };

@@ -46,7 +46,9 @@ var statistics = (function() {
 
         xA = xA / fi.length;
 
-        //console.log(xA);
+        console.log("xA ", xA);
+        console.log("fi ", fi);
+        console.log("averagePoint ", averagePoint);
 
         return xA;
     }
